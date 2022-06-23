@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+<div class="text-center">
+  <h1>Categories</h1>
+  <%= link_to "New category", new_category_path, class:"btn btn-primary" %>
+</div>
+
+<div class="container">
+  <div id="categories">
+    <% @categories.each do |category| %>
+      <%= render category %>
+      <p>
+        <%= link_to "Show", category, class:"btn btn-outline-info" %>
+      </p>
+    <% end %>
+  </div>
+
+
+
+</div>
+
+
+
